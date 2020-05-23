@@ -30,7 +30,7 @@ public class Botones : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(0);
         }
     }
 
