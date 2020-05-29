@@ -8,6 +8,8 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 	public GUIText GestureInfo;
     public GameObject ClientesMan;
     public GameObject puntosScrip;
+    public GameObject ObjClick;
+    public GameObject handCursor;
 
     // private bool to track if progress message has been displayed
     private bool progressDisplayed;
@@ -90,7 +92,11 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
             ClientesMan.GetComponent<ClientesManager>().avanzarCliente(true);
             puntosScrip.GetComponent<PuntosScript>().VerificarCliente(false);
         }
-           
+
+        if (gesture == KinectGestures.Gestures.Click)
+        {
+            ObjClick.transform.position = handCursor.transform.position;
+        }
 
         if (GestureInfo != null)
 			GestureInfo.GetComponent<GUIText>().text = sGestureText;

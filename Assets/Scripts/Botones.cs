@@ -44,13 +44,6 @@ public class Botones : MonoBehaviour
         ClientesMan.GetComponent<ClientesManager>().avanzarCliente(false);
     }
 
-    public void botonJugar()
-    {
-        SceneManager.LoadScene(1);
-    }
-    public void botonSalir()
-    {
-        Application.Quit();
-    }
+   
 
 }
