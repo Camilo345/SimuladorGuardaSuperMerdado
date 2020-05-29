@@ -17,14 +17,14 @@ public class PuntosScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+      clientes = clientesManager.GetComponent<ClientesManager>().clientes;
     }
 
     // Update is called once per frame
     void Update()
     {
         i = clientesManager.GetComponent<ClientesManager>().i;
-        clientes = clientesManager.GetComponent<ClientesManager>().clientes;
+       
         errores.text = ConteoErrores + "";
     }
 

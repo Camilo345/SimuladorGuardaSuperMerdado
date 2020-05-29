@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Botones : MonoBehaviour
 {
     public GameObject ClientesMan;
-  //  public GameObject puntosScrip;
+    public GameObject puntosScrip;
     
     // Start is called before the first frame update
     void Start()
@@ -20,13 +20,13 @@ public class Botones : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.D))
         {
             ClientesMan.GetComponent<ClientesManager>().avanzarCliente(true);
-           // puntosScrip.GetComponent<PuntosScript>().VerificarCliente(true);
+            puntosScrip.GetComponent<PuntosScript>().VerificarCliente(true);
         }
 
         if (Input.GetKeyDown(KeyCode.A))
         {
             ClientesMan.GetComponent<ClientesManager>().avanzarCliente(false);
-        //    puntosScrip.GetComponent<PuntosScript>().VerificarCliente(false);
+           puntosScrip.GetComponent<PuntosScript>().VerificarCliente(false);
         }
         if (Input.GetKeyDown(KeyCode.S))
         {

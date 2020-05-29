@@ -7,6 +7,7 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 	// GUI Text to display the gesture messages.
 	public GUIText GestureInfo;
     public GameObject ClientesMan;
+    public GameObject puntosScrip;
 
     // private bool to track if progress message has been displayed
     private bool progressDisplayed;
@@ -78,10 +79,18 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 			sGestureText += string.Format(" at ({0:F1}, {1:F1})", screenPos.x, screenPos.y);
 
         if (gesture == KinectGestures.Gestures.RaiseLeftHand)
+        {
             ClientesMan.GetComponent<ClientesManager>().avanzarCliente(false);
+            puntosScrip.GetComponent<PuntosScript>().VerificarCliente(true);
+        }
+         
 
         if (gesture == KinectGestures.Gestures.RaiseRightHand)
+        {
             ClientesMan.GetComponent<ClientesManager>().avanzarCliente(true);
+            puntosScrip.GetComponent<PuntosScript>().VerificarCliente(false);
+        }
+           
 
         if (GestureInfo != null)
 			GestureInfo.GetComponent<GUIText>().text = sGestureText;
