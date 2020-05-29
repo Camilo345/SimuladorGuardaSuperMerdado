@@ -207,10 +207,10 @@ RectTransform:
   m_Father: {fileID: 847049807}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.024428044, y: 0.11678164}
-  m_AnchorMax: {x: 0.5282889, y: 0.284}
-  m_AnchoredPosition: {x: 0.1000061, y: 0.099998474}
-  m_SizeDelta: {x: 0.6500015, y: -1.2000008}
+  m_AnchorMin: {x: 0.024428044, y: 0.038163673}
+  m_AnchorMax: {x: 0.5282889, y: 0.3231817}
+  m_AnchoredPosition: {x: -0.112472534, y: 0}
+  m_SizeDelta: {x: 0.22501993, y: 1.7700005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &172160992
 MonoBehaviour:
@@ -233,10 +233,10 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b7b38722b0ead6841b684bea22bb367f, type: 3}
     m_FontSize: 10
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
@@ -759,8 +759,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.030539764, y: 0.045}
   m_AnchorMax: {x: 0.30217993, y: 0.32200003}
-  m_AnchoredPosition: {x: 0, y: 1}
-  m_SizeDelta: {x: 85.08, y: 33.5}
+  m_AnchoredPosition: {x: 0, y: 4.48291}
+  m_SizeDelta: {x: 85.08, y: 51.502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847049808
 MonoBehaviour:
@@ -864,10 +864,10 @@ RectTransform:
   m_Father: {fileID: 847049807}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.024428044, y: 0}
-  m_AnchorMax: {x: 0.5364316, y: 0.1008496}
-  m_AnchoredPosition: {x: -0.30000305, y: -11.800003}
-  m_SizeDelta: {x: -1.3399963, y: 23.283}
+  m_AnchorMin: {x: 0.012383852, y: 0}
+  m_AnchorMax: {x: 0.53631836, y: 0.09976362}
+  m_AnchoredPosition: {x: 0.38752747, y: -13.399994}
+  m_SizeDelta: {x: -0.28999996, y: 24.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &941524518
 MonoBehaviour:
@@ -893,7 +893,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: b7b38722b0ead6841b684bea22bb367f, type: 3}
     m_FontSize: 10
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
@@ -1345,10 +1345,10 @@ RectTransform:
   m_Father: {fileID: 847049807}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.016285364, y: 0.30800003}
-  m_AnchorMax: {x: 0.26700002, y: 0.45722154}
-  m_AnchoredPosition: {x: 0.40000916, y: 0.40000153}
-  m_SizeDelta: {x: -1.6699982, y: 0.80000305}
+  m_AnchorMin: {x: 0.024428044, y: 0.26018167}
+  m_AnchorMax: {x: 0.52025944, y: 0.5238183}
+  m_AnchoredPosition: {x: -0.125, y: -0.5}
+  m_SizeDelta: {x: 0.20000005, y: -0.10999966}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077356013
 MonoBehaviour:
@@ -1371,12 +1371,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b7b38722b0ead6841b684bea22bb367f, type: 3}
     m_FontSize: 10
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 1
-    m_MaxSize: 40
+    m_MaxSize: 30
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2491,15 +2491,15 @@ RectTransform:
   m_GameObject: {fileID: 1902227332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3916119, y: 1.2891977, z: 1.2891977}
+  m_LocalScale: {x: 1.3916119, y: 1.2891979, z: 1.2891979}
   m_Children: []
   m_Father: {fileID: 847049807}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -23.399994, y: -0.8999939}
-  m_SizeDelta: {x: -36.889984, y: -25.899994}
+  m_AnchoredPosition: {x: -19.059998, y: 0.8653488}
+  m_SizeDelta: {x: -30.65, y: -31.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1902227334
 MonoBehaviour:
