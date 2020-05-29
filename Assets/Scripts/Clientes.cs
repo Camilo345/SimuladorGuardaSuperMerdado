@@ -14,6 +14,7 @@ public class Clientes : MonoBehaviour
     public GameObject[] targets;
     public bool puedoMoverme = false;
     public int i = 1;
+    public float timer = 2;
 
 
     int ultimoDigito;
@@ -28,9 +29,10 @@ public class Clientes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(puedoMoverme)
-        this.transform.position = Vector3.MoveTowards(transform.position, targets[i].transform.position, velocidad);
 
+        if(puedoMoverme&&timer<0)
+        this.transform.position = Vector3.MoveTowards(transform.position, targets[i].transform.position, velocidad);
+        timer -= 1*Time.deltaTime;
     }
 
 

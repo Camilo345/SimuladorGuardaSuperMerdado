@@ -25,14 +25,18 @@ public class ClientesManager : MonoBehaviour
     {
        
 
-        if (decision&&i<clientes.Length)
+        if (decision && i < clientes.Length) 
             clientes[i].GetComponent<Clientes>().i++;
         else
             clientes[i].GetComponent<Clientes>().i--;
 
         i++;
-        if(i<clientes.Length)
-        clientes[i].GetComponent<Clientes>().puedoMoverme = true;
+        if (i < clientes.Length)
+        {
+            clientes[i].GetComponent<Clientes>().puedoMoverme = true;
+            clientes[i].GetComponent<Clientes>().timer = 2;
+        }
+      
     }
 
 }
