@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Botones : MonoBehaviour
+public class botones : MonoBehaviour
 {
-    public GameObject ClientesMan;
-    public GameObject puntosScrip;
-    
+    public GameObject HandCursor;
+    public GameObject AyudaClick;
+
+    static int puntos=0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,33 +19,43 @@ public class Botones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            ClientesMan.GetComponent<ClientesManager>().avanzarCliente(true);
-            puntosScrip.GetComponent<PuntosScript>().VerificarCliente(true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            ClientesMan.GetComponent<ClientesManager>().avanzarCliente(false);
-           puntosScrip.GetComponent<PuntosScript>().VerificarCliente(false);
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            SceneManager.LoadScene(1);
-        }
+     
     }
 
-    public void botonAceptar()
+
+    public void botonJugar()
     {
-        ClientesMan.GetComponent<ClientesManager>().avanzarCliente(true);
+        SceneManager.LoadScene(1);
     }
-
-    public void botonRechazar()
+    public void botonSalir()
     {
-        ClientesMan.GetComponent<ClientesManager>().avanzarCliente(false);
+        Application.Quit();
     }
 
-   
+    public void botonReintentar()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void botonInicio()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    private void OnCollisionStay(Collision c)
+    {
+        if (c.gameObject.tag==("btJugar"))
+        {
+            botonJugar();
+        }
+     }
+    public void CambiarPuntos(int puntaje)
+    {
+        puntos = puntaje;
+    }
+    public int retornarPuntos()
+    {
+        int p = puntos;
+        return p;
+    }
 
 }
