@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PuntosScript : MonoBehaviour
 {
@@ -10,8 +11,10 @@ public class PuntosScript : MonoBehaviour
     public GameObject diaSemanaController;
     public GameObject clientesManager;
     public int ConteoErrores=0;
+    public GameObject botones;
 
     int i;
+     public float timerGameOver = 0;
     GameObject[] clientes;
 
     // Start is called before the first frame update
@@ -26,6 +29,11 @@ public class PuntosScript : MonoBehaviour
         i = clientesManager.GetComponent<ClientesManager>().i;
        
         errores.text = ConteoErrores + "";
+        if (timerGameOver > 2 && timerGameOver<2.5)
+        {
+            SceneManager.LoadScene(2);
+        }
+        timerGameOver -= 1 * Time.deltaTime;
     }
 
     public void VerificarCliente(bool decision)
@@ -39,11 +47,21 @@ public class PuntosScript : MonoBehaviour
 
         if ((tapabocas == false || guantes == false||(digitoCedula!=numero1&&digitoCedula!=numero2)) && decision == true)
         {
-            ConteoErrores++;
+            gameOver();
         }
-        if (tapabocas == true && guantes == true&&(digitoCedula==numero1||digitoCedula==numero2) && decision == false)
+        else if (tapabocas == true && guantes == true&&(digitoCedula==numero1||digitoCedula==numero2) && decision == false)
         {
-            ConteoErrores++;
+            gameOver();
         }
+        else
+        {
+            ConteoErrores += 100;
+        }
+    }
+    public void gameOver()
+    {
+        ConteoErrores += 50;
+        timerGameOver = 5;
+        botones.GetComponent<botones>().CambiarPuntos(ConteoErrores);
     }
 }

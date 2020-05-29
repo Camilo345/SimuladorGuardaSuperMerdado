@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class botones : MonoBehaviour
 {
-    public GameObject HandCursor;
-    public GameObject AyudaClick;
 
     static int puntos=0;
 
