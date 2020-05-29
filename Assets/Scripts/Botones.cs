@@ -30,7 +30,7 @@ public class Botones : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 
@@ -42,6 +42,15 @@ public class Botones : MonoBehaviour
     public void botonRechazar()
     {
         ClientesMan.GetComponent<ClientesManager>().avanzarCliente(false);
+    }
+
+    public void botonJugar()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void botonSalir()
+    {
+        Application.Quit();
     }
 
 }
