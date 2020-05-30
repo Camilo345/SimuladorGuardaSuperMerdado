@@ -39,13 +39,6 @@ public class botones : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
-    private void OnCollisionStay(Collision c)
-    {
-        if (c.gameObject.tag==("btJugar"))
-        {
-            botonJugar();
-        }
-     }
     public void CambiarPuntos(int puntaje)
     {
         puntos = puntaje;

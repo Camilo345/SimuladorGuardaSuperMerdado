@@ -141,6 +141,7 @@ public class MouseControl
 		}
 
 		mouse_event(MouseFlags.Absolute | MouseFlags.Move, mouseX, mouseY, 0, System.UIntPtr.Zero);
+      
     }
 
 	// find the closest matching child window to the screen size

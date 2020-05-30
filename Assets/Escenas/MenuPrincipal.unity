@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 136621879}
   m_Layer: 0
   m_Name: HandCursor
-  m_TagString: Untagged
+  m_TagString: cursor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,63 +488,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &782084319
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 782084322}
-  - component: {fileID: 782084321}
-  - component: {fileID: 782084320}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Click
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &782084320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 782084319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a91de40b5d74ac4dac77797c3d03ea9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!65 &782084321
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 782084319}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 5, y: 5, z: 5}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &782084322
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 782084319}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 436.65625, y: 134.17676, z: -17.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &999714146
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,8 +632,9 @@ MonoBehaviour:
   - {fileID: 999714153}
   CalibrationText: {fileID: 0}
   HandCursor1: {fileID: 136621877}
+  cubo: {fileID: 0}
   HandCursor2: {fileID: 0}
-  ControlMouseCursor: 0
+  ControlMouseCursor: 1
   GesturesDebugText: {fileID: 124790326}
 --- !u!114 &999714153
 MonoBehaviour:
@@ -707,7 +651,7 @@ MonoBehaviour:
   GestureInfo: {fileID: 0}
   ClientesMan: {fileID: 0}
   puntosScrip: {fileID: 0}
-  ObjClick: {fileID: 782084319}
+  ObjClick: {fileID: 0}
   handCursor: {fileID: 136621877}
 --- !u!1 &1254528585 stripped
 GameObject:
@@ -808,15 +752,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100036, guid: ed1c50b3cebc9374f9da79ca55dd4e4b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: ed1c50b3cebc9374f9da79ca55dd4e4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 182.8
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: ed1c50b3cebc9374f9da79ca55dd4e4b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: ed1c50b3cebc9374f9da79ca55dd4e4b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -851,6 +795,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 12000000, guid: aed58eb378278e648b6fbe8ccc4e6ac3,
         type: 3}
+    - target: {fileID: 11400000, guid: ed1c50b3cebc9374f9da79ca55dd4e4b, type: 3}
+      propertyPath: MoveVertically
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed1c50b3cebc9374f9da79ca55dd4e4b, type: 3}
 --- !u!1001 &1402753183
@@ -1012,6 +960,7 @@ GameObject:
   - component: {fileID: 1486001763}
   - component: {fileID: 1486001762}
   - component: {fileID: 1486001761}
+  - component: {fileID: 1486001760}
   m_Layer: 5
   m_Name: Salir
   m_TagString: Untagged
@@ -1038,6 +987,18 @@ RectTransform:
   m_AnchoredPosition: {x: -0.7902832, y: -2.5}
   m_SizeDelta: {x: -5.23999, y: -1.1800003}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1486001760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486001758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a91de40b5d74ac4dac77797c3d03ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1486001761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1081,7 +1042,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 782084320}
+      - m_Target: {fileID: 1486001760}
         m_MethodName: botonSalir
         m_Mode: 1
         m_Arguments:
@@ -1362,19 +1323,18 @@ RectTransform:
   m_AnchoredPosition: {x: -0.5, y: 0.090026855}
   m_SizeDelta: {x: -0.45999908, y: -2.1799998}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!65 &1967920670
-BoxCollider:
+--- !u!114 &1967920670
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967920668}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 147.97, y: 45.23, z: 6.1}
-  m_Center: {x: 0, y: 0, z: -0.5}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a91de40b5d74ac4dac77797c3d03ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1967920671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1418,7 +1378,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 782084320}
+      - m_Target: {fileID: 1967920670}
         m_MethodName: botonJugar
         m_Mode: 1
         m_Arguments:

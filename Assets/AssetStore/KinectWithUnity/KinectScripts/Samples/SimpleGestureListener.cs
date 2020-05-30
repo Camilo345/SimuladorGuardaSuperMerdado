@@ -95,7 +95,8 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 
         if (gesture == KinectGestures.Gestures.Click)
         {
-            ObjClick.transform.position = handCursor.transform.position;
+            Debug.Log("click");
+            MouseControl.MouseClick();
         }
 
         if (GestureInfo != null)

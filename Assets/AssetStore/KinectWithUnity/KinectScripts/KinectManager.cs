@@ -88,6 +88,7 @@ public class KinectManager : MonoBehaviour
 	
 	// GUI Texture to display the hand cursor for Player1
 	public GameObject HandCursor1;
+    public GameObject cubo;
 	
 	// GUI Texture to display the hand cursor for Player1
 	public GameObject HandCursor2;
@@ -1195,13 +1196,15 @@ public class KinectManager : MonoBehaviour
 									}
 
 									HandCursor1.transform.position = Vector3.Lerp(HandCursor1.transform.position, vCursorPos, 3 * Time.deltaTime);
-								}
+                                  
+
+                                }
 								
 								if(ControlMouseCursor)
 								{
 									Vector3 vCursorPos = HandCursor1.GetComponent<GUITexture>() != null ? HandCursor1.transform.position :
 										Camera.main.WorldToViewportPoint(HandCursor1.transform.position);
-									MouseControl.MouseMove(vCursorPos, CalibrationText);
+                                    MouseControl.MouseMove(vCursorPos, CalibrationText);
 								}
 							}
 						}
