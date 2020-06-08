@@ -186,9 +186,13 @@ public class KinectManager : MonoBehaviour
 	private ClippedLegsFilter[] clippedLegsFilter;
 	private BoneOrientationsConstraint boneConstraintsFilter;
 	private SelfIntersectionConstraint selfIntersectionConstraint;
-	
-	
-	// returns the single KinectManager instance
+
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
+    // returns the single KinectManager instance
     public static KinectManager Instance
     {
         get
@@ -997,7 +1001,7 @@ public class KinectManager : MonoBehaviour
 			flipMatrix[2, 2] = -1;
 			
 			instance = this;
-			DontDestroyOnLoad(gameObject);
+		//	DontDestroyOnLoad(gameObject);
 		}
 		catch(DllNotFoundException e)
 		{

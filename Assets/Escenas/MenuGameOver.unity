@@ -513,7 +513,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -858,7 +858,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 100
-  m_Depth: -1
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -928,8 +928,9 @@ MonoBehaviour:
   - {fileID: 999714153}
   CalibrationText: {fileID: 0}
   HandCursor1: {fileID: 136621877}
+  cubo: {fileID: 0}
   HandCursor2: {fileID: 0}
-  ControlMouseCursor: 0
+  ControlMouseCursor: 1
   GesturesDebugText: {fileID: 124790326}
 --- !u!114 &999714153
 MonoBehaviour:
@@ -1047,7 +1048,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: ed1c50b3cebc9374f9da79ca55dd4e4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -509.73
       objectReference: {fileID: 0}
     - target: {fileID: 400036, guid: ed1c50b3cebc9374f9da79ca55dd4e4b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1394,7 +1395,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 1
-  m_Camera: {fileID: 530789345}
+  m_Camera: {fileID: 999714150}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
