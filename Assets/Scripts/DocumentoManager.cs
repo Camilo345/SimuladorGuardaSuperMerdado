@@ -29,7 +29,7 @@ public class DocumentoManager : MonoBehaviour
         if (i < clientes.Length)
         {
             nombre.text = clientes[i].GetComponent<Clientes>().nombre;
-            edad.text = clientes[i].GetComponent<Clientes>().Edad;
+            edad.text = clientes[i].GetComponent<Clientes>().apellido;
             Documento.text = clientes[i].GetComponent<Clientes>().Cedula.ToString();
          //   tapabocas.text = "Tapabocas "+ clientes[i].GetComponent<Clientes>().tapabocas;
          //   guantes.text = "Guantes " + clientes[i].GetComponent<Clientes>().guantes;

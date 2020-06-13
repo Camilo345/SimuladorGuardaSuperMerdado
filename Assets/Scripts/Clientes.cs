@@ -6,7 +6,7 @@ public class Clientes : MonoBehaviour
 {
 
     public string nombre;
-    public string Edad;
+    public string apellido;
     public int Cedula;
     public bool tapabocas;
     public bool guantes;
