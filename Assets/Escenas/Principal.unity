@@ -1294,7 +1294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombre: Felipe
-  Edad: 20
+  apellido: Hincapie
   Cedula: 2147483647
   tapabocas: 1
   guantes: 0
@@ -1775,7 +1775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombre: Juan Camilo
-  Edad: 19
+  apellido: "Bola\xF1os"
   Cedula: 1005744418
   tapabocas: 1
   guantes: 1
@@ -2004,7 +2004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombre: Sebastian
-  Edad: 20
+  apellido: Sanchez
   Cedula: 1524896524
   tapabocas: 0
   guantes: 1
