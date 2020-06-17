@@ -15,9 +15,10 @@ public class Clientes : MonoBehaviour
     public bool puedoMoverme = false;
     public int i = 1;
     public float timer = 2;
-
+    public bool escoger = false;
 
     int ultimoDigito;
+   
     
     // Start is called before the first frame update
     void Start()
@@ -33,14 +34,20 @@ public class Clientes : MonoBehaviour
 
         if (puedoMoverme && timer < 0)
             this.transform.position = Vector3.MoveTowards(transform.position, targets[i].transform.position, velocidad);
+
+        if (transform.position == targets[1].transform.position)
+            escoger = true;
+        else
+            escoger = false;
         
         timer -= 1*Time.deltaTime;
     }
  
     public IEnumerator CoroutinaDesactivar()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         this.gameObject.SetActive(false);
+        puedoMoverme = false;
     }
 
     public void desactivar()

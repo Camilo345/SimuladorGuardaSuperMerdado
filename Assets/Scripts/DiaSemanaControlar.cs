@@ -10,52 +10,58 @@ public class DiaSemanaControlar : MonoBehaviour
     public int numero2;
     public GameObject[] CartelesMaerial;
     public GameObject cartel;
+
+    public  int dia = 0;
     // Start is called before the first frame update
     void Start()
     {
+        dia = PlayerPrefs.GetInt("dia");
+        if (dia > 4)
+            dia = 0;
+
+        PlayerPrefs.SetInt("dia",dia);
         definirDia();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+      
     }
 
     public void definirDia()
     {
         GameObject objeto;
-        int numero = Random.Range(0, 5);     
 
-        if (numero == 0)
+        if (dia == 0)
         {
             numero1 = 1;
             numero2 = 2;
             objeto=  Instantiate(CartelesMaerial[0]);
             objeto.transform.position = cartel.transform.position;
          }
-        if (numero == 1)
+        if (dia == 1)
         {
             numero1 = 3;
             numero2 = 4;
             objeto = Instantiate(CartelesMaerial[1]);
             objeto.transform.position = cartel.transform.position;
         }
-        if (numero == 2)
+        if (dia == 2)
         {
             numero1 = 5;
             numero2 = 6;
             objeto = Instantiate(CartelesMaerial[2]);
             objeto.transform.position = cartel.transform.position;
         }
-        if (numero == 3)
+        if (dia == 3)
         {
            numero1 = 7;
            numero2 = 8;
             objeto = Instantiate(CartelesMaerial[3]);
             objeto.transform.position = cartel.transform.position;
         }
-        if (numero == 4)
+        if (dia == 4)
         {
             numero1 = 9;
             numero2 = 0;

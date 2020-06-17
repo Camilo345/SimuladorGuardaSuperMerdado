@@ -43,7 +43,7 @@ public class PuntosScript : MonoBehaviour
         int digitoCedula= (clientes[i].GetComponent<Clientes>().Cedula)%10;
         int numero1 = diaSemanaController.GetComponent<DiaSemanaControlar>().numero1;
         int numero2 = diaSemanaController.GetComponent<DiaSemanaControlar>().numero2;
-        Debug.Log(tapabocas + " " + guantes);
+      
 
         if ((tapabocas == false || guantes == false||(digitoCedula!=numero1&&digitoCedula!=numero2)) && decision == true)
         {
