@@ -142,9 +142,10 @@ MonoBehaviour:
   guantes: 1
   velocidad: 0.03
   targets:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {x: 2.12, y: 1.26, z: -1.4}
+  - {x: 0.017, y: 1.26, z: -1.4}
+  - {x: -4.13, y: 1.26, z: -1.4}
   puedoMoverme: 0
   i: 1
   timer: 2
+  escoger: 0

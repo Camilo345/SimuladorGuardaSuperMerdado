@@ -5,15 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class ClientesManager : MonoBehaviour
 {
-    public GameObject[] clientes;
+    public GameObject[] clientes=new GameObject[3];
     public int i=0;
     public int d=0;
     public bool decidir=false;
-    
-  
+
+
     // Start is called before the first frame update
     void Start()
     {
+        d = PlayerPrefs.GetInt("dia");
+        Debug.Log("d:" + d);
+       
         clientes[0].GetComponent<Clientes>().puedoMoverme = true;
         clientes[0].SetActive(true);
     }
@@ -21,8 +24,7 @@ public class ClientesManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        d = PlayerPrefs.GetInt("dia");
-        Debug.Log("d:"+d);
+      
         decidir = clientes[i].GetComponent<Clientes>().escoger;
     }
 
@@ -62,4 +64,8 @@ public class ClientesManager : MonoBehaviour
         }
     
     }
+
+   
+
+    
 }
