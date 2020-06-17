@@ -24,16 +24,27 @@ public class Clientes : MonoBehaviour
     {
         ultimoDigito = Cedula % 10;
         this.transform.position = targets[0].transform.position;
+        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(puedoMoverme&&timer<0)
-        this.transform.position = Vector3.MoveTowards(transform.position, targets[i].transform.position, velocidad);
+        if (puedoMoverme && timer < 0)
+            this.transform.position = Vector3.MoveTowards(transform.position, targets[i].transform.position, velocidad);
+        
         timer -= 1*Time.deltaTime;
     }
+ 
+    public IEnumerator CoroutinaDesactivar()
+    {
+        yield return new WaitForSeconds(2);
+        this.gameObject.SetActive(false);
+    }
 
-
+    public void desactivar()
+    {
+        StartCoroutine(CoroutinaDesactivar());
+    }
 }
