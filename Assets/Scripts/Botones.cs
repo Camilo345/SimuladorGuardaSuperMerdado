@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class botones : MonoBehaviour
 {
 
-    static int puntos=0;
+   public int puntos=0;
 
     // Start is called before the first frame update
     void Start()
@@ -17,13 +17,18 @@ public class botones : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     
+        puntos = PlayerPrefs.GetInt("puntos");
+        if (puntos == 3)
+        {
+            StartCoroutine(gameOver());
+        }
     }
 
 
     public void botonJugar()
     {
         SceneManager.LoadScene(1);
+        PlayerPrefs.SetInt("puntos", 0);
     }
     public void botonSalir()
     {
@@ -33,10 +38,12 @@ public class botones : MonoBehaviour
     public void botonReintentar()
     {
         SceneManager.LoadScene(1);
+        PlayerPrefs.SetInt("puntos", 0);
     }
     public void botonInicio()
     {
         SceneManager.LoadScene(0);
+        PlayerPrefs.SetInt("puntos", 0);
     }
 
     public void CambiarPuntos(int puntaje)
@@ -45,8 +52,15 @@ public class botones : MonoBehaviour
     }
     public int retornarPuntos()
     {
-        int p = puntos;
+        int p = PlayerPrefs.GetInt("puntos");
+        p = puntos;
         return p;
     }
 
+    public IEnumerator gameOver()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(7);
+        PlayerPrefs.SetInt("puntos", 0);
+    }
 }

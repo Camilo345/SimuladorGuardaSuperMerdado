@@ -11,14 +11,10 @@ public class DiaSemanaControlar : MonoBehaviour
     public GameObject[] CartelesMaerial;
     public GameObject cartel;
 
-    public  int dia = 0;
+    public  int dia;
     // Start is called before the first frame update
     void Start()
     {
-        dia = PlayerPrefs.GetInt("dia");
-        if (dia > 4)
-            dia = 0;
-
         PlayerPrefs.SetInt("dia",dia);
         definirDia();
     }

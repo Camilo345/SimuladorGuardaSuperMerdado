@@ -21,6 +21,7 @@ public class PuntosScript : MonoBehaviour
     void Start()
     {
       clientes = clientesManager.GetComponent<ClientesManager>().clientes;
+      ConteoErrores = PlayerPrefs.GetInt("puntos");
     }
 
     // Update is called once per frame
@@ -31,7 +32,7 @@ public class PuntosScript : MonoBehaviour
         errores.text = ConteoErrores + "";
         if (timerGameOver > 2 && timerGameOver<2.5)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(6);
         }
         timerGameOver -= 1 * Time.deltaTime;
     }
@@ -47,21 +48,16 @@ public class PuntosScript : MonoBehaviour
 
         if ((tapabocas == false || guantes == false||(digitoCedula!=numero1&&digitoCedula!=numero2)) && decision == true)
         {
-            gameOver();
+            sumarError();
         }
         else if (tapabocas == true && guantes == true&&(digitoCedula==numero1||digitoCedula==numero2) && decision == false)
         {
-            gameOver();
-        }
-        else
-        {
-            ConteoErrores += 100;
+            sumarError();
         }
     }
-    public void gameOver()
+    public void sumarError()
     {
-        ConteoErrores += 50;
-        timerGameOver = 5;
-        botones.GetComponent<botones>().CambiarPuntos(ConteoErrores);
+        ConteoErrores ++;
+        PlayerPrefs.SetInt("puntos", ConteoErrores);
     }
 }

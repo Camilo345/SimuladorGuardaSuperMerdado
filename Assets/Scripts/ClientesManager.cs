@@ -15,8 +15,6 @@ public class ClientesManager : MonoBehaviour
     void Start()
     {
         d = PlayerPrefs.GetInt("dia");
-        Debug.Log("d:" + d);
-       
         clientes[0].GetComponent<Clientes>().puedoMoverme = true;
         clientes[0].SetActive(true);
     }
@@ -52,16 +50,8 @@ public class ClientesManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         d = PlayerPrefs.GetInt("dia");
-        d++;
-        PlayerPrefs.SetInt("dia", d);
-        if (d > 4)
-        {
-            SceneManager.LoadScene(2);
-        }
-        else
-        {
-            SceneManager.LoadScene(1);
-        }
+
+        SceneManager.LoadScene(d + 2);
     
     }
 

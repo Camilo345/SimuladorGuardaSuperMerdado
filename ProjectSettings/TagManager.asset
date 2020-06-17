@@ -8,6 +8,7 @@ TagManager:
   - btJugar
   - btSalir
   - cursor
+  - target
   layers:
   - Default
   - TransparentFX
