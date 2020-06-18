@@ -50,9 +50,10 @@ public class ClientesManager : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         d = PlayerPrefs.GetInt("dia");
-
-        SceneManager.LoadScene(d + 2);
-    
+        if(d<5)
+        SceneManager.LoadScene(8);
+        else
+        SceneManager.LoadScene(6);
     }
 
    
