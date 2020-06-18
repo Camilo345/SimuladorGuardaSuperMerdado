@@ -27,9 +27,10 @@ public class botones : MonoBehaviour
 
     public void botonJugar()
     {
-        SceneManager.LoadScene(1);
         PlayerPrefs.SetInt("puntos", 0);
         PlayerPrefs.SetInt("dia", 0);
+        SceneManager.LoadScene(1);
+       
     }
     public void botonSalir()
     {
@@ -38,9 +39,10 @@ public class botones : MonoBehaviour
 
     public void botonReintentar()
     {
-        SceneManager.LoadScene(1);
         PlayerPrefs.SetInt("dia", 0);
         PlayerPrefs.SetInt("puntos", 0);
+        SceneManager.LoadScene(1);
+    
     }
     public void botonInicio()
     {
@@ -61,7 +63,7 @@ public class botones : MonoBehaviour
 
     public IEnumerator gameOver()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2.8f);
         SceneManager.LoadScene(7);
         PlayerPrefs.SetInt("puntos", 0);
     }

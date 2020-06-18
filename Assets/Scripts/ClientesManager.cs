@@ -24,7 +24,7 @@ public class ClientesManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+      if(i!=3)
         decidir = clientes[i].GetComponent<Clientes>().escoger;
     }
 
@@ -46,6 +46,7 @@ public class ClientesManager : MonoBehaviour
         }
         if (i == 3)
           StartCoroutine(pasarDia());
+        else
         Debug.Log("dia " + d + "cleinte " + i + "Tapabocas " + clientes[i].GetComponent<Clientes>().tapabocas + " Guantes " + clientes[i].GetComponent<Clientes>().guantes);
     }
 

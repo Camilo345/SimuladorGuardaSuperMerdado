@@ -12,6 +12,7 @@ public class PuntosScript : MonoBehaviour
     public GameObject clientesManager;
     public int ConteoErrores=0;
     public GameObject botones;
+    public controlImagePuntos cip;
 
     int i;
      public float timerGameOver = 0;
@@ -59,5 +60,6 @@ public class PuntosScript : MonoBehaviour
     {
         ConteoErrores ++;
         PlayerPrefs.SetInt("puntos", ConteoErrores);
+        cip.activarImage();
     }
 }
