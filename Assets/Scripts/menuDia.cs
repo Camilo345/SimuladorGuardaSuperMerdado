@@ -13,10 +13,11 @@ public class menuDia : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        StartCoroutine(pasarDIa());
         d = PlayerPrefs.GetInt("dia");
         diaActual.text = diaSemana[d];
         diaSiguiente.text = diaSemana[d+1];
-        StartCoroutine(pasarDIa());
+     
     }
 
     // Update is called once per frame

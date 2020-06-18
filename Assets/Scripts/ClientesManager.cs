@@ -17,6 +17,8 @@ public class ClientesManager : MonoBehaviour
         d = PlayerPrefs.GetInt("dia");
         clientes[0].GetComponent<Clientes>().puedoMoverme = true;
         clientes[0].SetActive(true);
+        Debug.Log( "dia " +d+"cleinte "+i +"Tapabocas " + clientes[i].GetComponent<Clientes>().tapabocas + " Guantes " + clientes[i].GetComponent<Clientes>().guantes);
+   
     }
 
     // Update is called once per frame
@@ -44,16 +46,15 @@ public class ClientesManager : MonoBehaviour
         }
         if (i == 3)
           StartCoroutine(pasarDia());
+        Debug.Log("dia " + d + "cleinte " + i + "Tapabocas " + clientes[i].GetComponent<Clientes>().tapabocas + " Guantes " + clientes[i].GetComponent<Clientes>().guantes);
     }
 
     public IEnumerator pasarDia()
     {
         yield return new WaitForSeconds(3);
         d = PlayerPrefs.GetInt("dia");
-        if(d<5)
         SceneManager.LoadScene(8);
-        else
-        SceneManager.LoadScene(6);
+     
     }
 
    

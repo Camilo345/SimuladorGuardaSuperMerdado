@@ -29,6 +29,7 @@ public class botones : MonoBehaviour
     {
         SceneManager.LoadScene(1);
         PlayerPrefs.SetInt("puntos", 0);
+        PlayerPrefs.SetInt("dia", 0);
     }
     public void botonSalir()
     {
@@ -38,6 +39,7 @@ public class botones : MonoBehaviour
     public void botonReintentar()
     {
         SceneManager.LoadScene(1);
+        PlayerPrefs.SetInt("dia", 0);
         PlayerPrefs.SetInt("puntos", 0);
     }
     public void botonInicio()
