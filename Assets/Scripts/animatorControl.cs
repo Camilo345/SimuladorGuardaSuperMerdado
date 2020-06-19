@@ -21,6 +21,7 @@ public class animatorControl : MonoBehaviour
     {
         anim.SetBool("fase1", true);
         anim.SetBool("fase2", false);
+        StartCoroutine(cambiarRot());
     }
 
     public void fase2()
@@ -38,7 +39,7 @@ public class animatorControl : MonoBehaviour
         anim.SetBool("fase2B", true);
         anim.SetBool("fase1", false);
         anim.SetBool("fase2", false);
-        transform.rotation = Quaternion.Euler(0, 0, 0);
+       
         StartCoroutine(fase3B());
     }
     public IEnumerator fase3()
@@ -60,4 +61,9 @@ public class animatorControl : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 90, 0);
     }
 
+    public IEnumerator cambiarRot()
+    {
+        yield return new WaitForSeconds(1);
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+    }
 }
