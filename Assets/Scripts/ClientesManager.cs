@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 public class ClientesManager : MonoBehaviour
 {
     public GameObject[] clientes=new GameObject[3];
+
     public int i=0;
     public int d=0;
     public bool decidir=false;
 
-
+    public  animatorControl[] ac;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,13 +31,15 @@ public class ClientesManager : MonoBehaviour
 
     public void avanzarCliente(bool decision)
     {
+       
+       if(decision)
+            ac[i].fase2();
+       else
+            ac[i].fase2B();
 
-        if (decision && i < clientes.Length) 
-            clientes[i].GetComponent<Clientes>().i++;
-        else
-            clientes[i].GetComponent<Clientes>().i--;
-
+        StartCoroutine(moverCliente(decision));
         clientes[i].GetComponent<Clientes>().desactivar();
+
         i++;
         if (i < clientes.Length)
         {
@@ -58,7 +61,22 @@ public class ClientesManager : MonoBehaviour
      
     }
 
-   
+   public IEnumerator moverCliente(bool decision)
+    {
+       
+        yield return new WaitForSeconds(1);
+        if (decision && i < clientes.Length)
+        {
+            clientes[i - 1].GetComponent<Clientes>().i++;
+          
+        }
+        else
+        {
+            clientes[i - 1].GetComponent<Clientes>().i--;
+          
+        }
+           
+    }
 
     
 }

@@ -16,9 +16,10 @@ public class Clientes : MonoBehaviour
     public int i = 1;
     public float timer = 2;
     public bool escoger = false;
+    public animatorControl ac;
 
     int ultimoDigito;
-   
+    bool empezar = true;
     
     // Start is called before the first frame update
     void Start()
@@ -36,16 +37,26 @@ public class Clientes : MonoBehaviour
             this.transform.position = Vector3.MoveTowards(transform.position, targets[i].transform.position, velocidad);
 
         if (transform.position == targets[1].transform.position)
+        {
             escoger = true;
+            if (empezar)
+            {
+                ac.fase1();
+                empezar = false;
+            }
+        }
         else
+        {
             escoger = false;
+        }
+            
         
         timer -= 1*Time.deltaTime;
     }
  
     public IEnumerator CoroutinaDesactivar()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
         this.gameObject.SetActive(false);
         puedoMoverme = false;
     }
@@ -53,6 +64,18 @@ public class Clientes : MonoBehaviour
     public void desactivar()
     {
         StartCoroutine(CoroutinaDesactivar());
+    }
+
+    public void cambierMoverme()
+    {
+        StartCoroutine(Moverme());
+        puedoMoverme=true;
+    }
+
+    public IEnumerator Moverme()
+    {
+        yield return new WaitForSeconds(1);
+        puedoMoverme = true;
     }
 
 

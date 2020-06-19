@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PuntosScript : MonoBehaviour
 {
 
-    public Text errores;
+  
     public GameObject diaSemanaController;
     public GameObject clientesManager;
     public int ConteoErrores=0;
@@ -29,8 +29,7 @@ public class PuntosScript : MonoBehaviour
     void Update()
     {
         i = clientesManager.GetComponent<ClientesManager>().i;
-       
-        errores.text = ConteoErrores + "";
+     
         if (timerGameOver > 2 && timerGameOver<2.5)
         {
             SceneManager.LoadScene(6);
