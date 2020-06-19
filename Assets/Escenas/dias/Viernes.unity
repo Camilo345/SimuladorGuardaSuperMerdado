@@ -762,12 +762,12 @@ PrefabInstance:
     - target: {fileID: 1986913604415149777, guid: 50c55c0d49e36104c8909b259762cce4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0014801
+      value: -92
       objectReference: {fileID: 0}
     - target: {fileID: 1986913604415149777, guid: 50c55c0d49e36104c8909b259762cce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 32.1
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 1986913604415149777, guid: 50c55c0d49e36104c8909b259762cce4,
         type: 3}
@@ -1537,6 +1537,7 @@ MonoBehaviour:
   i: 0
   d: 0
   decidir: 0
+  ac: []
 --- !u!1 &1273298247
 GameObject:
   m_ObjectHideFlags: 0

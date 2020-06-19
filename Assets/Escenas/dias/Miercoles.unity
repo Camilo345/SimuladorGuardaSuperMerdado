@@ -1673,6 +1673,7 @@ MonoBehaviour:
   i: 0
   d: 0
   decidir: 0
+  ac: []
 --- !u!1001 &1262279986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1743,12 +1744,12 @@ PrefabInstance:
     - target: {fileID: 1986913604415149777, guid: 50c55c0d49e36104c8909b259762cce4,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.0014801
+      value: -92
       objectReference: {fileID: 0}
     - target: {fileID: 1986913604415149777, guid: 50c55c0d49e36104c8909b259762cce4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 32.1
+      value: 88
       objectReference: {fileID: 0}
     - target: {fileID: 1986913604415149777, guid: 50c55c0d49e36104c8909b259762cce4,
         type: 3}
@@ -2817,7 +2818,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d83233f0e07cfaf4db3cafea5f554489, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  errores: {fileID: 0}
   diaSemanaController: {fileID: 1530922307}
   clientesManager: {fileID: 1259490034}
   ConteoErrores: 0

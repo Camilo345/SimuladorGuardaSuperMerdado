@@ -28,8 +28,8 @@ public class botones : MonoBehaviour
     public void botonJugar()
     {
         PlayerPrefs.SetInt("puntos", 0);
-        PlayerPrefs.SetInt("dia", 0);
-        SceneManager.LoadScene(1);
+        PlayerPrefs.SetInt("dia", -1);
+        SceneManager.LoadScene(8);
        
     }
     public void botonSalir()
@@ -40,8 +40,8 @@ public class botones : MonoBehaviour
     public void botonReintentar()
     {
         PlayerPrefs.SetInt("dia", 0);
-        PlayerPrefs.SetInt("puntos", 0);
-        SceneManager.LoadScene(1);
+        PlayerPrefs.SetInt("puntos", -1);
+        SceneManager.LoadScene(8);
     
     }
     public void botonInicio()

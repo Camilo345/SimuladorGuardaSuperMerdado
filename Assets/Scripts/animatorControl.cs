@@ -34,25 +34,30 @@ public class animatorControl : MonoBehaviour
 
     public void fase2B()
     {
+       
         anim.SetBool("fase2B", true);
         anim.SetBool("fase1", false);
         anim.SetBool("fase2", false);
-        StartCoroutine(fase3());
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+        StartCoroutine(fase3B());
     }
     public IEnumerator fase3()
     {
         yield return new WaitForSeconds(1);
-        anim.SetBool("fase2", true);
-        anim.SetBool("fase1", true);
-        anim.SetBool("fase2B", false);
+        anim.SetBool("fase2B",false);
+        anim.SetBool("fase1", false);
+        anim.SetBool("fase2", false);
+        anim.SetTrigger("fase3a");
     }
 
     public IEnumerator fase3B()
     {
         yield return new WaitForSeconds(1);
+        anim.SetBool("fase2B", false);
+        anim.SetBool("fase1", false);
         anim.SetBool("fase2", false);
-        anim.SetBool("fase1", true);
-        anim.SetBool("fase2B", true);
+        anim.SetTrigger("fase3b");
+        transform.rotation = Quaternion.Euler(0, 90, 0);
     }
 
 }
