@@ -39,8 +39,8 @@ public class botones : MonoBehaviour
 
     public void botonReintentar()
     {
-        PlayerPrefs.SetInt("dia", 0);
-        PlayerPrefs.SetInt("puntos", -1);
+        PlayerPrefs.SetInt("dia", -1);
+        PlayerPrefs.SetInt("puntos", 0);
         SceneManager.LoadScene(8);
     
     }
@@ -65,6 +65,5 @@ public class botones : MonoBehaviour
     {
         yield return new WaitForSeconds(2.8f);
         SceneManager.LoadScene(7);
-        PlayerPrefs.SetInt("puntos", 0);
     }
 }

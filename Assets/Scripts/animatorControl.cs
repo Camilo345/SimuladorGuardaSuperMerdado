@@ -5,7 +5,7 @@ using UnityEngine;
 public class animatorControl : MonoBehaviour
 {
     private Animator anim;
-
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -15,12 +15,13 @@ public class animatorControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+       
     }
     public void fase1()
     {
         anim.SetTrigger("fase1");
-       StartCoroutine(cambiarRot());
+        StartCoroutine(cambiarRot());
+
     }
 
     public void fase2()
@@ -32,27 +33,20 @@ public class animatorControl : MonoBehaviour
 
     public void fase2B()
     {
-       
         anim.SetTrigger("fase2b");
-
-        StartCoroutine(fase3B());
+        StartCoroutine(fase3B());     
     }
     public IEnumerator fase3()
     {
-        yield return new WaitForSeconds(1f);
-       
+        yield return new WaitForSeconds(1f);       
         anim.SetTrigger("fase3a");
     }
 
     public IEnumerator fase3B()
-    {
-       
+    {     
         yield return new WaitForSeconds(1f);
         transform.rotation = Quaternion.Euler(0, 90, 0);
-        anim.SetTrigger("fase3b");
-
-        
-        
+        anim.SetTrigger("fase3b");  
     }
 
     public IEnumerator cambiarRot()

@@ -16,7 +16,7 @@ public class Clientes : MonoBehaviour
     public int i = 1;
     public float timer = 2;
     public bool escoger = false;
-    public animatorControl ac;
+   public animatorControl ac;
 
     int ultimoDigito;
     bool empezar = true;
@@ -41,7 +41,7 @@ public class Clientes : MonoBehaviour
             escoger = true;
             if (empezar)
             {
-                ac.fase1();
+               ac.fase1();
                 empezar = false;
             }
         }
@@ -81,11 +81,11 @@ public class Clientes : MonoBehaviour
     {
         if (dec)
         {
-            ac.fase2();   
+           ac.fase2();   
         }
         else
         {
-            ac.fase2B();
+           ac.fase2B();
         }
         StartCoroutine(animarF2(dec));
     }

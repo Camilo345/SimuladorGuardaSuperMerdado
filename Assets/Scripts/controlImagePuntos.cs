@@ -11,9 +11,14 @@ public class controlImagePuntos : MonoBehaviour
     void Start()
     {
         i = PlayerPrefs.GetInt("puntos");
-        for(int l = 0; l < i; i++)
+        if (i == 1)
         {
-            ImagePuntos[l].SetActive(true);
+            ImagePuntos[0].SetActive(true);
+        }
+        if (i == 2)
+        {
+            ImagePuntos[0].SetActive(true);
+            ImagePuntos[1].SetActive(true);
         }
     }
 
