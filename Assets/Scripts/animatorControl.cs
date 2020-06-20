@@ -19,51 +19,45 @@ public class animatorControl : MonoBehaviour
     }
     public void fase1()
     {
-        anim.SetBool("fase1", true);
-        anim.SetBool("fase2", false);
-        StartCoroutine(cambiarRot());
+        anim.SetTrigger("fase1");
+       StartCoroutine(cambiarRot());
     }
 
     public void fase2()
     {
-        anim.SetBool("fase2", true);
-        anim.SetBool("fase1", false);
-        anim.SetBool("fase2B", false);
-
+        transform.rotation = Quaternion.Euler(0, -90, 0);
+        anim.SetTrigger("fase2a");
         StartCoroutine(fase3());
     }
 
     public void fase2B()
     {
        
-        anim.SetBool("fase2B", true);
-        anim.SetBool("fase1", false);
-        anim.SetBool("fase2", false);
-       
+        anim.SetTrigger("fase2b");
+
         StartCoroutine(fase3B());
     }
     public IEnumerator fase3()
     {
-        yield return new WaitForSeconds(1);
-        anim.SetBool("fase2B",false);
-        anim.SetBool("fase1", false);
-        anim.SetBool("fase2", false);
+        yield return new WaitForSeconds(1f);
+       
         anim.SetTrigger("fase3a");
     }
 
     public IEnumerator fase3B()
     {
-        yield return new WaitForSeconds(1);
-        anim.SetBool("fase2B", false);
-        anim.SetBool("fase1", false);
-        anim.SetBool("fase2", false);
-        anim.SetTrigger("fase3b");
+       
+        yield return new WaitForSeconds(1f);
         transform.rotation = Quaternion.Euler(0, 90, 0);
+        anim.SetTrigger("fase3b");
+
+        
+        
     }
 
     public IEnumerator cambiarRot()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.95f);
         transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 }

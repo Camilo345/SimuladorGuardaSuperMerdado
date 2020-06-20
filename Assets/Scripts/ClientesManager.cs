@@ -31,20 +31,15 @@ public class ClientesManager : MonoBehaviour
 
     public void avanzarCliente(bool decision)
     {
-       
-       if(decision)
-            ac[i].fase2();
-       else
-            ac[i].fase2B();
 
-        StartCoroutine(moverCliente(decision));
+        clientes[i].GetComponent<Clientes>().animarFse2(decision);
         clientes[i].GetComponent<Clientes>().desactivar();
 
         i++;
         if (i < clientes.Length)
         {
             clientes[i].GetComponent<Clientes>().puedoMoverme = true;
-            clientes[i].GetComponent<Clientes>().timer = 2;
+            clientes[i].GetComponent<Clientes>().timer = 3;
             clientes[i].SetActive(true);
         }
         if (i == 3)
@@ -59,23 +54,6 @@ public class ClientesManager : MonoBehaviour
         d = PlayerPrefs.GetInt("dia");
         SceneManager.LoadScene(8);
      
-    }
-
-   public IEnumerator moverCliente(bool decision)
-    {
-       
-        yield return new WaitForSeconds(1.1f);
-        if (decision && i < clientes.Length)
-        {
-            clientes[i - 1].GetComponent<Clientes>().i++;
-          
-        }
-        else
-        {
-            clientes[i - 1].GetComponent<Clientes>().i--;
-          
-        }
-           
     }
 
     

@@ -56,7 +56,7 @@ public class Clientes : MonoBehaviour
  
     public IEnumerator CoroutinaDesactivar()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(6);
         this.gameObject.SetActive(false);
         puedoMoverme = false;
     }
@@ -76,6 +76,27 @@ public class Clientes : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         puedoMoverme = true;
+    }
+    public void animarFse2(bool dec)
+    {
+        if (dec)
+        {
+            ac.fase2();   
+        }
+        else
+        {
+            ac.fase2B();
+        }
+        StartCoroutine(animarF2(dec));
+    }
+    public IEnumerator animarF2(bool deci)
+    {
+        yield return new WaitForSeconds(1.1f);
+        if (deci)
+            i++;
+        else
+            i--;
+     
     }
 
 

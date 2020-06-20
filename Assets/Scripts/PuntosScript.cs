@@ -22,7 +22,7 @@ public class PuntosScript : MonoBehaviour
     void Start()
     {
       clientes = clientesManager.GetComponent<ClientesManager>().clientes;
-      ConteoErrores = PlayerPrefs.GetInt("puntos");
+        ConteoErrores = PlayerPrefs.GetInt("puntos");
     }
 
     // Update is called once per frame

@@ -10,7 +10,11 @@ public class controlImagePuntos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        i = PlayerPrefs.GetInt("puntos");
+        for(int l = 0; l < i; i++)
+        {
+            ImagePuntos[l].SetActive(true);
+        }
     }
 
     // Update is called once per frame

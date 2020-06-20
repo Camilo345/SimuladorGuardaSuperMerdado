@@ -11,13 +11,14 @@ public class UIMenuGameOver : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        int p = 3-PlayerPrefs.GetInt("puntos");
+        puntaje.text =(p * 100)+"";
     }
 
     // Update is called once per frame
     void Update()
     {
-        puntaje.text = botones.GetComponent<botones>().retornarPuntos()+"";
+       
     }
 
 }
