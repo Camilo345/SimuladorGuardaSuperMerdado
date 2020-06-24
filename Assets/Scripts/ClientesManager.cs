@@ -11,7 +11,7 @@ public class ClientesManager : MonoBehaviour
     public int d=0;
     public bool decidir=false;
 
-    public  animatorControl[] ac;
+   
     // Start is called before the first frame update
     void Start()
     {
