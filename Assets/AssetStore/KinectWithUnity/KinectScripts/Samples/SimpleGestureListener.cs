@@ -82,14 +82,14 @@ public class SimpleGestureListener : MonoBehaviour, KinectGestures.GestureListen
 
         if (gesture == KinectGestures.Gestures.RaiseLeftHand)
         {
-            ClientesMan.GetComponent<ClientesManager>().avanzarCliente(false);
+            ClientesMan.GetComponent<ClientesManager>().avanzarCliente(true);
             puntosScrip.GetComponent<PuntosScript>().VerificarCliente(true);
         }
          
 
         if (gesture == KinectGestures.Gestures.RaiseRightHand)
         {
-            ClientesMan.GetComponent<ClientesManager>().avanzarCliente(true);
+            ClientesMan.GetComponent<ClientesManager>().avanzarCliente(false);
             puntosScrip.GetComponent<PuntosScript>().VerificarCliente(false);
         }
 

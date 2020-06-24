@@ -14,6 +14,7 @@ public class DocumentoManager : MonoBehaviour
     public GameObject clientesManager;
 
     int i;
+    bool escoger=false;
     GameObject[] clientes;
    
     void Start()
@@ -25,15 +26,21 @@ public class DocumentoManager : MonoBehaviour
     {
         i = clientesManager.GetComponent<ClientesManager>().i;
         clientes = clientesManager.GetComponent<ClientesManager>().clientes;
-
-        if (i < clientes.Length)
+        escoger = clientesManager.GetComponent<ClientesManager>().decidir;
+        if (i < clientes.Length && escoger==true)
         {
             nombre.text = clientes[i].GetComponent<Clientes>().nombre;
             edad.text = clientes[i].GetComponent<Clientes>().apellido;
             Documento.text = clientes[i].GetComponent<Clientes>().Cedula.ToString();
-         //   tapabocas.text = "Tapabocas "+ clientes[i].GetComponent<Clientes>().tapabocas;
-         //   guantes.text = "Guantes " + clientes[i].GetComponent<Clientes>().guantes;
+            //   tapabocas.text = "Tapabocas "+ clientes[i].GetComponent<Clientes>().tapabocas;
+            //   guantes.text = "Guantes " + clientes[i].GetComponent<Clientes>().guantes;
 
+        }
+        else
+        {
+            nombre.text = "";
+            edad.text = "";
+            Documento.text = "";
         }
 
     }

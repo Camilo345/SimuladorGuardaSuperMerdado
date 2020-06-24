@@ -1499,6 +1499,11 @@ PrefabInstance:
       propertyPath: ac
       value: 
       objectReference: {fileID: 841123460}
+    - target: {fileID: 3275062202109281063, guid: a2ef5c23fd0f6a240bb7f32d790157e8,
+        type: 3}
+      propertyPath: nombre
+      value: Andrea
+      objectReference: {fileID: 0}
     - target: {fileID: 3275062204081116115, guid: a2ef5c23fd0f6a240bb7f32d790157e8,
         type: 3}
       propertyPath: m_IsActive
@@ -1674,10 +1679,6 @@ MonoBehaviour:
   i: 0
   d: 0
   decidir: 0
-  ac:
-  - {fileID: 646887838}
-  - {fileID: 841123460}
-  - {fileID: 1255851219}
 --- !u!1 &1273298247
 GameObject:
   m_ObjectHideFlags: 0
