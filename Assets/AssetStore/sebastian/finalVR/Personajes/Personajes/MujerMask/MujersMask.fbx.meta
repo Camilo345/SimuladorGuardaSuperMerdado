@@ -1,0 +1,306 @@
+fileFormatVersion: 2
+guid: c86fe4bafa78cd24494f54c380fd002c
+ModelImporter:
+  serializedVersion: 25
+  internalIDToNameTable:
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bodymat
+    second: {fileID: 2100000, guid: 8cf372e1ed5749e42954a6217e73f219, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottommat
+    second: {fileID: 2100000, guid: 2169363b31818f04fa1153d158822e59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hairmat
+    second: {fileID: 2100000, guid: 4c2db9c2fb6979540a7ef2e39489c314, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Maskmat
+    second: {fileID: 2100000, guid: dd3168850b94ba4448c8679e19665af9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoesmat
+    second: {fileID: 2100000, guid: 2a817b7990c6f7d468fd93eb57abb3eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Topmat
+    second: {fileID: 2100000, guid: cb255a1c7f7f76f4a9e0caa8a6f061ae, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Body_Diffuse
+    second: {fileID: 2800000, guid: 43494bac869335745a24ff2e5787ae35, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Body_Gloss
+    second: {fileID: 2800000, guid: 22c250561cd26f248a41b301340f4bf3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Body_Normal
+    second: {fileID: 2800000, guid: 2580d106ff719d74abe9a9c00e94b967, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Body_Opacity
+    second: {fileID: 2800000, guid: 4cca6110eebdbd740b87719bafed96c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Body_Specular
+    second: {fileID: 2800000, guid: f10ab147ae683a7458926b0c8b240865, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Bottom_Diffuse
+    second: {fileID: 2800000, guid: 60b999bf371fccd41b1bd9eff9c75440, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Bottom_Gloss
+    second: {fileID: 2800000, guid: 094063281ae4027419b2ccd9c8819c7b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Bottom_Normal
+    second: {fileID: 2800000, guid: 4d905ad57edcaad4aade459820e5a4d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Bottom_Opacity
+    second: {fileID: 2800000, guid: ad3eb62cb859df04697a6c622af575bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Bottom_Specular
+    second: {fileID: 2800000, guid: 08ed27837d56e2c41bea282b9587dea8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Hair_Diffuse
+    second: {fileID: 2800000, guid: e3373bc7959b6dd4c97b75a9a047ef7e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Hair_Gloss
+    second: {fileID: 2800000, guid: 04203f0a74373994ea1da4f700c1e2eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Hair_Normal
+    second: {fileID: 2800000, guid: 15f4b601811ee4747a696497184d3af2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Hair_Opacity
+    second: {fileID: 2800000, guid: 258ad94e325b1a2418134fcc16061506, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Hair_Specular
+    second: {fileID: 2800000, guid: de0437b78ce16b64e9d91f70e458d56c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Mask_Diffuse
+    second: {fileID: 2800000, guid: ef37aa91d27a8444fbbe31fba93d162d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Mask_Gloss
+    second: {fileID: 2800000, guid: 83b4f2becf8036045b89418f10098f9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Mask_Normal
+    second: {fileID: 2800000, guid: f27edc94d050aa54fb035e7860298437, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Mask_Opacity
+    second: {fileID: 2800000, guid: 7e98b97f3707781488f8ed8bb9caa4df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Mask_Specular
+    second: {fileID: 2800000, guid: 1b99af692f087f5478e27993fb8a8c96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Shoes_Diffuse
+    second: {fileID: 2800000, guid: 422087ad8fd341643bfa93d0f6927f05, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Shoes_Gloss
+    second: {fileID: 2800000, guid: 464e2d89fb0fe4e4b8101e350f255bdd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Shoes_Normal
+    second: {fileID: 2800000, guid: 2ac2c0c4ac90e4e498ab40461912b8f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Shoes_Opacity
+    second: {fileID: 2800000, guid: ec9ddb12648676d428b42e757b243596, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Shoes_Specular
+    second: {fileID: 2800000, guid: e82aba3246f485941ae1d8c84f397b27, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Top_Diffuse
+    second: {fileID: 2800000, guid: 1c373e99b15178141aec17f134283082, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Top_Gloss
+    second: {fileID: 2800000, guid: 87a10c9814e1e3b419e14b185973d391, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Top_Normal
+    second: {fileID: 2800000, guid: ac7edaa0238c24e4b91c152b68e7f765, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Top_Opacity
+    second: {fileID: 2800000, guid: 5daa2b58d95b62a44bb20d1b11474839, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MujersMask_Top_Specular
+    second: {fileID: 2800000, guid: d40d687fdf93313498454f635ba84cd3, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: mixamo.com
+      takeName: mixamo.com
+      internalID: -203655887218126122
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
