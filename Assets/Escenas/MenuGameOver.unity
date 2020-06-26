@@ -263,6 +263,7 @@ GameObject:
   - component: {fileID: 132363900}
   - component: {fileID: 132363899}
   - component: {fileID: 132363898}
+  - component: {fileID: 132363903}
   m_Layer: 5
   m_Name: Inicio
   m_TagString: btJugar
@@ -301,6 +302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a91de40b5d74ac4dac77797c3d03ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntos: 0
 --- !u!65 &132363899
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -332,7 +334,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -407,6 +409,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132363896}
   m_CullTransparentMesh: 0
+--- !u!95 &132363903
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132363896}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5653a66c24d58c5448b8fda307a49208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &136621877
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,6 +1465,7 @@ GameObject:
   - component: {fileID: 1967920671}
   - component: {fileID: 1967920670}
   - component: {fileID: 1967920674}
+  - component: {fileID: 1967920675}
   m_Layer: 5
   m_Name: Reintentar
   m_TagString: btJugar
@@ -1501,7 +1523,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1588,3 +1610,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a91de40b5d74ac4dac77797c3d03ea9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  puntos: 0
+--- !u!95 &1967920675
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1967920668}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5653a66c24d58c5448b8fda307a49208, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
