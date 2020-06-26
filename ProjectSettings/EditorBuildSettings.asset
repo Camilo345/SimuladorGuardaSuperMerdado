@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Escenas/pasarDia.unity
     guid: 1b0742c71d6554347b0fe7796a236af2
+  - enabled: 1
+    path: Assets/Escenas/Instrucciones.unity
+    guid: 15b5fc9221549154daf4c04ac3cd1bd6
   m_configObjects: {}
