@@ -12,6 +12,7 @@ public class UIMenuGameOver : MonoBehaviour
     void Start()
     {
         int p = 3-PlayerPrefs.GetInt("puntos");
+        PlayerPrefs.SetInt("puntos", 0);
         puntaje.text =(p * 100)+"";
     }
 

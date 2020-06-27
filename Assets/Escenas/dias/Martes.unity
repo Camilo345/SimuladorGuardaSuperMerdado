@@ -1717,10 +1717,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TwoUsers: 0
   ComputeUserMap: 0
-  ComputeColorMap: 1
+  ComputeColorMap: 0
   DisplayUserMap: 0
-  DisplayColorMap: 1
-  DisplaySkeletonLines: 1
+  DisplayColorMap: 0
+  DisplaySkeletonLines: 0
   DisplayMapsWidthPercent: 20
   SensorHeight: 1
   SensorAngle: 0

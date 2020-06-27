@@ -63,7 +63,7 @@ public class botones : MonoBehaviour
 
     public IEnumerator gameOver()
     {
-        yield return new WaitForSeconds(2.8f);
+        yield return new WaitForSeconds(2.5f);
         SceneManager.LoadScene(7);
     }
 }

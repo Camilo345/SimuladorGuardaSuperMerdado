@@ -285,10 +285,10 @@ RectTransform:
   m_Father: {fileID: 1678517819}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.45250002, y: 0.07039809}
-  m_AnchorMax: {x: 0.69925004, y: 0.18783003}
-  m_AnchoredPosition: {x: -3, y: 1.5}
-  m_SizeDelta: {x: 2.5400085, y: 2.8199997}
+  m_AnchorMin: {x: 0.54577786, y: 0.07039809}
+  m_AnchorMax: {x: 0.785804, y: 0.18783003}
+  m_AnchoredPosition: {x: -1.3000002, y: 1.5}
+  m_SizeDelta: {x: 6.5400085, y: 2.8199997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132363898
 MonoBehaviour:
@@ -1487,10 +1487,10 @@ RectTransform:
   m_Father: {fileID: 1678517819}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.187, y: 0.07039809}
-  m_AnchorMax: {x: 0.42575002, y: 0.18783003}
-  m_AnchoredPosition: {x: -3.5, y: 1.5}
-  m_SizeDelta: {x: 9.540001, y: 2.8199997}
+  m_AnchorMin: {x: 0.20500001, y: 0.079}
+  m_AnchorMax: {x: 0.44700003, y: 0.18783003}
+  m_AnchoredPosition: {x: -1.3999996, y: 0}
+  m_SizeDelta: {x: 7.540001, y: 5.8199997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!65 &1967920670
 BoxCollider:
