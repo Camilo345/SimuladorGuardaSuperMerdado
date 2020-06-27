@@ -32,6 +32,7 @@ public class DocumentoManager : MonoBehaviour
             nombre.text = clientes[i].GetComponent<Clientes>().nombre;
             edad.text = clientes[i].GetComponent<Clientes>().apellido;
             Documento.text = clientes[i].GetComponent<Clientes>().Cedula.ToString();
+            clientes[i].GetComponent<Clientes>().foto.SetActive(true);
             //   tapabocas.text = "Tapabocas "+ clientes[i].GetComponent<Clientes>().tapabocas;
             //   guantes.text = "Guantes " + clientes[i].GetComponent<Clientes>().guantes;
 
@@ -41,6 +42,9 @@ public class DocumentoManager : MonoBehaviour
             nombre.text = "";
             edad.text = "";
             Documento.text = "";
+            clientes[0].GetComponent<Clientes>().foto.SetActive(false);
+            clientes[1].GetComponent<Clientes>().foto.SetActive(false);
+            clientes[2].GetComponent<Clientes>().foto.SetActive(false);
         }
 
     }
