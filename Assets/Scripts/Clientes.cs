@@ -17,6 +17,7 @@ public class Clientes : MonoBehaviour
     public float timer = 2;
     public bool escoger = false;
    public animatorControl ac;
+    public GameObject foto;
 
     int ultimoDigito;
     bool empezar = true;
